@@ -1,0 +1,83 @@
+body {
+    background-color: lightblue;
+}
+
+.first-line {
+    background-color: lightcyan;
+    padding: 20px;
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    font-family: cursive;
+}
+
+table {
+    border: 2px black solid;
+    margin: 0 auto;
+}
+
+td {
+    border: 2px black solid;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+th {
+    border: 2px black solid;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.inside-image {
+    width: 150px;
+}
+
+.add-book {
+    background-color: lightseagreen;
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px black solid;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.modal {
+    position: absolute;
+    background-color: maroon;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    left: 40%;
+    top: 40%;
+    border-radius: 8px;
+    color: white;
+}
+
+.number {
+    padding: 20px;
+    background-color: mediumseagreen;
+}
+
+.plus,
+.minus {
+    cursor: pointer;
+    padding: 18px;
+}
+
+.prev {
+    padding: 10px;
+    margin-left: 45%;
+}
+
+.next {
+    padding: 10px;
+}
+
+.radio {
+    display: none;
+}
+
+span {
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/index.css" class="script">
+
+</head>
+
+<body onload="onInit()">
+    <div class="first-line">Keren's Bookstore</div>
+    <button onclick="onAddBook()" title="Add" class="add-book">Create new book</button>
+    <section class="bookInputs" hidden>
+        <input class="txt-name" type="text" placeholder="Enter the name of the book">
+        <input class="txt-price" type="text" placeholder="Enter the price of the book">
+        <input class="txt-img" type="text" placeholder="Enter the imgUrl of the book">
+        <button onclick="saveAddedBook()">Save</button>
+    </section>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th><button onclick="onSortBy(this)" title="Sort by title" data-sort="name" class="name">Name⬇️</button></th>
+            <th><button onclick="onSortBy(this)" title="Sort by price" data-sort="price" class="price">Price⬇️</button></th>
+            <th>Image</th>
+            <th>Rating</th>
+        </tr>
+        <tbody class="book-list">
+        </tbody>
+    </table>
+
+
+    <section class="modal" hidden>
+        <button onclick="onCloseModal()">x</button>
+        <h3></h3>
+        <p></p>
+        <div class="image"></div>
+        <h4 class="rating"><button class="minus" onclick="onMinus()">➖</button>
+            <span class="number">5</span><button class="plus" onclick="onPlus()">➕</button></h4>
+        <div class="btn-location"></div>
+    </section>
+
+    <button class="prev" onclick="onChangePage(-1)">◀️</button><span class="curr-page">1</span>
+    <button class="next" onclick="onChangePage(1)">▶️</button>
+
+</body>
+<script src="js/storage-service.js "></script>
+<script src="js/book-service.js "></script>
+<script src="js/book-controller.js"></script>
+
+</html>
